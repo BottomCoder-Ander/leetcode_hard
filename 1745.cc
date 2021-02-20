@@ -4,7 +4,8 @@
  *      也有更优的算法O(n)解决。
  *      基于以下事实：如果一个串能分解成两个非空回文串，那么要么第一个回文串可以是最长回文前缀，要么第二个串是最长回文后缀。
  *      具体见https://leetcode-cn.com/problems/palindrome-partitioning-iv/solution/manacherxian-xing-shi-jian-fu-za-du-by-h-sj24/
- */
+ *      https://www.luogu.com.cn/blog/user25308/proof-cf1081h
+ * */
 
 class Solution {
     char s_new[4004];//存添加字符后的字符串
