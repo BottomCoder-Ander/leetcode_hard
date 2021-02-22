@@ -8,7 +8,7 @@
  *      bfs思路如下。首先设step[0][i][j][k][p]为当前为mouse turn时，mouse位于i,j位置，cat位于k,p位置时赢得比赛的最少步骤。
  *            而step[1][i][j][k][p] 为cat turn时， mouse位于i,j位置，cat位于k,p位置时mouse赢得比赛的最多步骤（大于等于一千就是mouse输）
  *          全部初始化为大于等于1000的值，然后由终止状态往前推。可以用队列进行优化，像spfs那样。
- */
+ */ 
 
 class Solution {
     int n, m;
