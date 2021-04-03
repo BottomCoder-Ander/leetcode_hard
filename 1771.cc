@@ -1,5 +1,10 @@
 /*
- *
+ * 1771. Maximize Palindrome Length From Subsequences
+ * 题意：给两个字符串word1,word2.从word1选取一个非空子序列s1，从word2选取非空一个子序列s2
+ *    将s1,s2拼接，问拼接后的字符串是回文串时，最大的回文串长度
+ * 题解：动态规划。先将两个串拼接成s。则问题就是s子序列中，两个端点在两个串中的最长回文序列长度。
+ *      可以设dp[i][j]为子串i到j的最长回文序列，然后端点在两个子串中的那些序列取最大值
+ *      也可以设dp[i][j]为串0到i和串j到s.length的最长偶数长度且两个端点在两个串中的回文子序列长度
  */
 class Solution {
 public:
